@@ -1,0 +1,779 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+header {
+    background-color: #1E5128;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .link {
+    color: white;
+  }
+
+  .link:hover {
+    color: #D8E9A8;
+  }
+
+  .loc-pin {
+    color: white;
+  }
+
+.link-icon {
+  margin-left: 1em;
+  color: white;
+}
+
+.link-icon:hover {
+  color: #D8E9A8;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+}
+
+.link-nav {
+  display: block;
+  padding: .5rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.link-nav:hover {
+  color: #D8E9A8;
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  position: absolute;
+}
+
+@media (max-width: 991px) {
+  body > nav > div > a > img {
+    display: none;
+  }
+  .navbar {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.offcanvas {
+  background-color: black;
+}
+
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+
+.hero {
+  width: 100%;
+  height: 100vh; /* Το ύψος του hero section είναι το ύψος της οθόνης */
+  background-image: linear-gradient(rgba(12,3,51,0.3),(12,3,51,0.3));
+  position: relative;
+  display: flex; /* Χρησιμοποιούμε flexbox για να κεντράρουμε το περιεχόμενο */
+  padding: 0 5%;
+  justify-content: center; /* Κεντράρουμε το περιεχόμενο οριζόντια */
+  align-items: center; /* Κεντράρουμε το περιεχόμενο κάθετα */
+}
+
+h1 {
+  color: #4E9F3D; /* Επιλέγεις το χρώμα του κειμένου */
+  font-size: 5rem; /* Το μέγεθος της γραμματοσειράς */
+  margin: 0; /* Αφαιρούμε τις περιθώρια γύρω από το h1 */
+  font-weight: 600;
+  text-align: center;
+}
+
+h4 {
+  color: #4E9F3D;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.button-green {
+  color: white;
+  background-color: #4E9F3D;
+  border-color: #4E9F3D;
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.button-green:hover {
+  transform: scale(0.95);
+  color: #D8E9A8;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: flex-end; /* Στοίχιση δεξιά */
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    justify-content: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+}
+
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 15px!important;
+}
+
+.c-item {
+  height: 600px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+h5 {
+  font-size: 200px;
+  isolation: isolate;
+}
+
+@media (max-width: 1245px) {
+.carousel-title {
+font-size: 150px;
+}
+}
+
+@media (max-width: 991px) {
+.carousel-title {
+font-size: 100px;
+}
+}
+
+@media (max-width: 621px) {
+.carousel-title {
+font-size: 75px;
+}
+}
+
+.custom-divider {
+  width: 100%;
+  height: 50px;
+}
+
+#coaches {
+  margin: 50px 0 50px 0;
+}
+
+.coach-h4 {
+  text-align: center;
+  align-items: center;
+  font-weight: 700;
+  margin-top: 100px !important;
+}
+
+.custom-margin {
+  margin-bottom: 4rem;
+}
+
+.coach-p {
+  padding-top: 4rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.coach-m {
+  padding-bottom: 9rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+h6 {
+  color: #4E9F3D;
+}
+
+.h6-g {
+  text-align: left;
+}
+
+.h6-p {
+  text-align: right;
+}
+
+.coach-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* about page */
+
+.award-section {
+  position: relative;
+  color: black;
+  min-height: 700px;
+  z-index: 0;
+  overflow: hidden;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.award-title {
+  position: relative;
+  font-size: 2rem !important;
+  font-weight: 700;
+  color: #4E9F3D;
+}
+
+.award-description {
+  position: relative;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-top: 5rem;
+  max-width: 1000px;
+}
+
+.award-img {
+  position: relative;
+  max-width: 250px;
+  border-radius: 15px;
+  float: left;
+  margin-right: 50px;
+}
+
+.gym-img {
+  position: relative;
+  max-width: 250px;
+  border-radius: 15px;
+  float: right;
+  margin-left: 50px;
+}
+
+.gym-img-2 {
+  position: relative;
+  max-width: 250px;
+  border-radius: 15px;
+  float: left;
+  margin-right: 50px;
+}
+
+.suc-description {
+  position: relative;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-top: 5rem;
+}
+
+.down-cont {
+  margin-top: 4rem;
+}
+
+.gym-back1 {
+  width: 100%;
+  height: auto;
+}
+
+.tr2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*BOOK NOW*/
+
+.cta-section {
+  background-color: #1E5128;
+  color: white;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+
+.cta-button {
+  background-color: #4E9F3D;
+  border: none;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #D8E9A8;
+  color: #1E5128;
+  transform: scale(1.05);
+}
+
+
+/* Testimonial*/
+
+.testimonial-section {
+  background-image: url('images/gym1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+  padding: 250px 0;
+}
+
+.testimonial-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.testimonial-content {
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-item blockquote {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.carousel-item footer {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.star-img {
+  height: 7rem;
+  width: 11rem;
+  top: 0;
+}
+
+.but1 {
+  left: 0;
+  transform: translate(-60px, -50%); /* πιο έξω και πιο πάνω */
+  top: 30%;
+}
+
+.but2 {
+  right: 0;
+  transform: translate(60px, -50%);
+  top: 30%;
+}
+
+.inner2 {
+  min-height: 200px;
+}
+
+.mar-top {
+  margin-top: 12rem;
+}
+
+.h2-foot {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4E9F3D;
+}
+
+.h2-foot2 {
+  padding-left: 3rem;
+}
+
+.footer-cl {
+  position: relative;
+  background-color: black;
+  left: 0;
+  right: 0;
+  text-align: start;
+}
+
+/* Ολα τα κείμενα & λίστες αριστερά */
+.footer-cl h2,
+.footer-cl ul,
+.footer-cl li,
+.footer-cl a,
+.footer-cl span {
+  text-align: start !important;
+}
+
+/* Για μικρές οθόνες — responsive */
+@media (max-width: 992px) {
+  .foot-logo {
+    padding-left: 2rem !important;
+    text-align: start;
+  }
+
+  .h2-foot2 {
+    padding-left: 2rem !important;
+    text-align: start !important;
+  }
+
+  .footer-cl footer {
+    text-align: start !important;
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  .rights-res {
+    text-align: start !important;
+    margin-left: 2rem !important;
+    font-size: 0.85rem;
+  }
+}
+
+/* Κάτω από 576px (κινητά) */
+@media (max-width: 576px) {
+  .foot-logo {
+    padding-left: 1rem !important;
+  }
+
+  .foot-img {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .footer-cl footer {
+    padding: 2rem 1rem;
+  }
+
+  .rights-res {
+    text-align: start !important;
+    font-size: 0.8rem;
+    margin-left: 1rem !important;
+  }
+}
+
+
+.foot-logo {
+  padding-left: 20rem;
+  padding-top: 1.5rem;
+  text-align: start;
+}
+
+.foot-img {
+  height: 9rem;
+  width: 9rem;
+}
+
+.foot-link {
+  color: white;
+}
+
+.foot-link:hover {
+  color: #D8E9A8;
+  text-decoration: underline;
+}
+
+/* SCROLL TO TOP */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4E9F3D;
+  color: white;
+  font-size: 28px;
+  padding: 10px 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1);
+  background-color: #3d8330;
+  color: #D8E9A8;
+}
+
+.rights-res {
+  margin-left: 7rem;
+}
+
+/* training page*/
+
+.tr1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.h3-tr {
+  color: #4E9F3D;
+  font-size: 1.5rem!important;
+  padding-left: 0.8rem;
+}
+
+.p-tr {
+  font-size: 1rem;
+  max-width: 100%;
+  line-height: 1.5rem;
+}
+
+.list1 {
+  padding-bottom: 0.5rem;
+}
+
+.benefits {
+  margin-left: 3rem;
+}
+
+.btn-tr {
+  max-width: 25%;
+  position: relative;
+  right: 0;
+  margin-left: 14.5rem;
+}
+
+.gym-back {
+  width: 100%;
+  height: auto;
+}
+
+
+/*contact page*/
+.contact-section {
+  padding-bottom: 4rem;
+  background-color: #f9f9f9;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Το background μόνο */
+.map-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/map.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: 1;
+}
+
+/* Το καθαρό κείμενο */
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #333;
+  text-shadow: 0px 0px 5px #fff;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.4); /* ελαφρύ φόντο αν θέλεις */
+  cursor: pointer;
+}
+
+.map-container:hover .map-overlay {
+  background: rgba(255,255,255,0.3);
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 4rem;
+  gap: 2rem;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 45%; /* περίπου 45% πλάτος η κάθε στήλη */
+}
+
+@media (max-width: 768px) {
+  .contact-info, .contact-form {
+    flex: 1 1 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact-content {
+      max-width: 1170px;
+      margin: 0 auto;
+  }
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 6rem;
+  border-style: none none none solid;
+  border-left-width: 1px;
+  border-color: black;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 70%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.cta-button {
+  background-color: #4E9F3D;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.cta-button:hover {
+  background-color: #3d8330;
+}
+
+.h2-cont {
+  margin-bottom: 1.5rem;
+}
+
+.link-cont {
+  color: black;
+  text-decoration: none;
+}
+
+.link-cont:hover {
+  color: #D8E9A8;
+}
+
+a, .link-nav {
+  cursor: pointer !important;
+}
+
+/* opening hours */
+.day-hour {
+  overflow: hidden;
+  padding: 5px 0;
+}
+
+.day-hour .day {
+  float: left;
+  font-weight: bold;
+}
+
+.day-hour .hour {
+  float: right;
+  color: gray;
+}
+
+.h2-cont1 {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}

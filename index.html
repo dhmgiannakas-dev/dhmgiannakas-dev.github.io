@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powerhall</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+  <link rel="manifest" href="icon/site.webmanifest">
+  <!-- Σύνδεση με το Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Σύνδεση με το προσαρμοσμένο CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="pt-2 pb-2">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <a href="tel:2105061752" class="d-flex align-items-center mb-lg-0 link-body-emphasis text-decoration-none link">
+        <i class="bi bi-telephone"></i>
+        <span>&nbsp;2105061752</span>
+      </a>
+      <a href="https://maps.app.goo.gl/2mk6xLndLJY5aqQ9A"
+        class="d-flex align-items-center mb-lg-0 link-body-emphasis text-decoration-none link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411" />
+        </svg>
+        <span>&nbsp;Ιωάννου χρισοστόμου 95, Πετρούπολη</span>
+      </a>
+      <div class="d-flex align-items-center mb-lg-0">
+        <a href="https://www.instagram.com/powerhall_/" class="link-body-emphasis link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=592531761113729" class="link-body-emphasis link-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+
+  <!-- Navbar με burger menu (offcanvas) -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom py-2">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.jpg" height="70" alt="Powerhall logo">
+      </a>
+
+      <!-- Burger κουμπί -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas menu -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand" href="index.html">
+              <img src="images/logo.jpg" height="70" alt="Powerhall logo">
+            </a>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a href="index.html" class="link-nav active">ΑΡΧΙΚΗ</a>
+            </li>
+            <li class="nav-item">
+              <a href="training.html" class="link-nav">ΠΡΟΠΟΝΗΣΕΙΣ</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="link-nav">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#coaches" class="link-nav smart-link" data-target="coaches">ΠΡΟΠΟΝΗΤΕΣ</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="link-nav">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Αρχική Ενότητα -->
+  <section class="hero">
+    <div class="back-video">
+      <video autoplay loop muted plays-inline>
+        <source src="images\vecteezy_close-up-gym-dumbbells-fitness-center-sport_1617796.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>Powerhall</h1>
+        <h4>The Art Of Fitness</h4>
+        <a href="contact.html"><button type="button" class="btn btn-lg button-green">Κλείσε Ραντεβού</button></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Υπηρεσίες -->
+  <section class="col-md-12 text-center py-5">
+    <div class="container" id="hanging-icons">
+      <h2 class="pb-4">Παροχές</h2>
+
+      <div class="row justify-content-center g-4">
+
+        <!-- 1 Ομαδικά Μαθήματα -->
+        <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center">
+          <div class="icon-square bg-body-secondary d-flex align-items-center justify-content-center rounded-4 mb-3"
+            style="width:80px;height:80px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="48" height="48">
+              <g transform="translate(0,512) scale(0.1,-0.1)" fill="#000">
+                <path
+                  d="M1110 4694c-84-17-229-90-305-151-162-131-260-325-272-538-8-139 13-239 79-375 44-91 62-115 142-195 76-76 106-99 186-138 121-59 207-80 335-80 136 0 262 31 361 88 39 23 42 28 64 112 44 170 156 357 277 460l56 48-6 90c-14 205-113 399-272 528-77 63-220 133-310 152-87 18-249 18-335-1z" />
+                <path
+                  d="M3670 4695c-85-19-229-91-305-152-150-122-251-310-271-508l-6-61 43-29c191-125 352-384 384-612 6-48 9-52 48-67 93-35 173-49 277-49 133 0 217 20 340 80 80 39 110 62 186 138 80 80 98 104 142 195 66 136 87 236 79 375-18 318-228 583-538 680-75 24-292 30-379 10z" />
+                <path
+                  d="M2473 3930c-184-33-357-138-468-285-63-84-95-145-127-245-19-64-23-96-23-215 0-154 14-213 77-338 214-424 782-541 1144-235 277 234 350 610 181 933-31 60-65 103-132 170-101 101-196 158-325 195-86 24-247 34-327 20z" />
+                <path
+                  d="M769 3140c-379-80-671-375-749-757-19-95-20-131-18-539l3-437 150-43c168-49 419-105 570-129 100-16 351-45 391-45 21 0 22 4 27 208 4 181 8 220 31 307 50 191 172 400 313 537 110 107 298 222 421 259 23 7 42 15 42 19 0 3-14 19-31 36-119 113-225 346-245 540l-7 64-406-1c-352 0-417-3-492-19z" />
+                <path
+                  d="M3526 3138c-3-13-8-48-11-78-17-151-95-330-201-461-36-45-64-82-62-84 2-1 29-12 60-23 268-99 492-301 623-562 87-174 113-293 122-557 6-189 6-193 27-188 12 2 66 7 121 10 294 19 631 96 838 192l77 36v430c0 393-2 437-21 530-77 385-370 679-753 758-79 16-138 19-453 19h-363l-4-22z" />
+                <path
+                  d="M2177 2379c-242-25-480-153-636-341-73-87-163-261-193-373-21-76-22-103-26-556l-3-476 123-36c262-77 483-124 728-157 199-27 637-38 814-21 331 33 616 100 814 192l84 39-5 452c-5 504-8 529-74 688-140 333-440 553-802 590-119 12-709 11-824-1z" />
+              </g>
+            </svg>
+          </div>
+          <h3 class="fs-4 fw-semibold">Ομαδικά Μαθήματα</h3>
+          <p>Ποικιλία ομαδικών προγραμμάτων σε cross training, functional training.</p>
+        </div>
+
+        <!-- 2 Μυϊκή Ενδυνάμωση -->
+        <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center">
+          <div class="icon-square bg-body-secondary d-flex align-items-center justify-content-center rounded-4 mb-3"
+            style="width:80px;height:80px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48">
+              <g transform="translate(0,64) scale(0.1,-0.1)" fill="#000">
+                <path
+                  d="M50 525c-15-38-12-87 6-113 20-29 69-30 84-1 13 24 4 41-11 19-8-13-10-13-19 0-17 26-7 106 11 94 12-7 11-44-1-44-5 0-10-4-10-10 0-5 14-10 31-10 30 0 31-1 25-32-4-18-9-69-13-113-4-69-2-89 19-144 28-74 48-92 78-73 11 6 39 12 64 12 56 0 115 21 199 72 81 49 104 83 87 133-6 18-23 41-37 50-37 25-100 21-129-6-30-28-30-35 1-43 14-4 23-10 21-15-3-5-24-4-46 2-35 10-43 8-69-11l-29-21-26 39c-35 53-33 85 5 121 40 37 60 36 79-4 11-24 23-33 45-35 39-5 55 19 55 84 0 60-14 77-62 72-27-2-34-8-42-35-12-43-43-45-57-3-6 17-16 30-22 30-27 0-90-29-99-44-14-26-33-19-43 17-9 28-15 32-48 35-32 3-38 0-47-23z" />
+              </g>
+            </svg>
+          </div>
+          <h3 class="fs-4 fw-semibold">Μυϊκή Ενδυνάμωση</h3>
+          <p>Εξατομικευμένα προγράμματα προπόνησης με εξειδικευμένους personal trainers.</p>
+        </div>
+
+        <!-- 3 Διατροφικές Συμβουλές -->
+        <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center">
+          <div class="icon-square bg-body-secondary d-flex align-items-center justify-content-center rounded-4 mb-3"
+            style="width:80px;height:80px;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48.000000pt" height="48.000000pt"
+              viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+
+              <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M208 627 c-179 -59 -245 -290 -125 -431 l33 -39 -18 -66 c-10 -36
+             -16 -72 -13 -79 3 -9 35 -12 127 -10 l122 3 10 35 c5 19 10 36 11 37 0 1 23
+             -4 49 -12 73 -22 95 -8 127 84 19 54 32 77 51 87 39 21 42 42 9 93 -16 25 -32
+             64 -36 86 -22 124 -123 214 -249 221 -33 2 -78 -2 -98 -9z m210 -202 c4 -54
+             -12 -80 -32 -53 -11 14 -15 11 -40 -28 -15 -24 -32 -47 -38 -50 -5 -4 -27 10
+             -48 31 l-38 37 -27 -41 c-29 -42 -39 -49 -50 -30 -7 10 59 119 72 119 4 0 24
+             -16 44 -36 l36 -35 21 33 c18 27 19 34 7 36 -29 6 -15 33 28 52 23 11 47 18
+             52 16 6 -1 11 -24 13 -51z" />
+              </g>
+            </svg>
+          </div>
+          <h3 class="fs-4 fw-semibold">Διατροφικές Συμβουλές</h3>
+          <p>Συμβουλευτική διατροφής από ειδικούς για την επίτευξη των στόχων σας.</p>
+        </div>
+
+        <!-- 4 Κίνητρο -->
+        <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center">
+          <div class="icon-square bg-body-secondary d-flex align-items-center justify-content-center rounded-4 mb-3"
+            style="width:80px;height:80px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48">
+              <g transform="translate(0,64) scale(0.1,-0.1)" fill="#000">
+                <path
+                  d="M208 627c-179-59-245-290-125-431l33-39-18-66c-10-36-16-72-13-79 3-9 35-12 127-10l122 3 10 35c5 19 10 36 11 37 0 1 23-4 49-12 73-22 95-8 127 84 19 54 32 77 51 87 39 21 42 42 9 93-16 25-32 64-36 86-22 124-123 214-249 221-33 2-78-2-98-9z" />
+              </g>
+            </svg>
+          </div>
+          <h3 class="fs-4 fw-semibold">Κίνητρο</h3>
+          <p>Βοήθεια σε ό,τι χρειαστείς για να συνεχίσεις δυναμικά!</p>
+        </div>
+
+        <!-- 5 Personal Training -->
+        <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center">
+          <div class="icon-square bg-body-secondary d-flex align-items-center justify-content-center rounded-4 mb-3"
+            style="width:80px;height:80px;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48.000000pt" height="48.000000pt"
+              viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+
+              <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M144 632 c-37 -24 -36 -91 1 -106 47 -17 85 6 85 53 0 45 -51 77 -86
+             53z" />
+                <path d="M92 493 c-7 -3 -19 -18 -27 -34 -14 -26 -14 -29 4 -38 10 -6 22 -7
+             26 -3 4 4 6 -14 4 -40 -2 -25 -1 -44 3 -42 3 2 16 -12 28 -31 25 -40 25 -40
+             -42 -80 -25 -15 -28 -14 -38 5 -9 17 -8 20 9 20 16 0 19 9 23 73 4 57 2 75
+             -10 84 -24 20 -32 -1 -32 -87 0 -56 -3 -71 -11 -57 -5 9 -7 23 -3 30 5 9 4 9
+             -6 0 -11 -10 -8 -20 14 -53 23 -35 29 -39 46 -30 18 10 19 6 22 -91 2 -82 6
+             -104 20 -112 12 -8 21 -7 32 2 13 11 16 38 18 130 l2 116 6 -119 c4 -96 8
+             -121 22 -129 12 -8 21 -7 32 2 14 11 16 43 16 214 0 207 5 250 14 113 6 -86 8
+             -91 31 -83 26 11 18 169 -8 163 -7 -2 -9 -1 -4 1 14 8 7 39 -13 61 -22 24 -40
+             29 -40 11 0 -5 -5 -7 -10 -4 -6 4 -18 1 -27 -7 -15 -11 -16 -11 -10 5 4 12 1
+             17 -9 17 -11 0 -14 -5 -10 -16 5 -14 4 -15 -8 -5 -8 7 -20 10 -26 6 -5 -3 -10
+             -1 -10 4 0 12 -7 13 -28 4z" />
+                <path d="M360 490 c-9 -6 -10 -10 -3 -10 6 0 16 -15 23 -34 11 -33 60 -89 60
+             -68 0 6 -9 26 -20 44 -37 61 -30 68 60 68 92 0 97 -7 55 -75 -36 -59 -30 -73
+             10 -25 19 23 35 51 35 61 0 11 7 22 16 26 13 5 13 7 2 14 -18 12 -220 11 -238
+             -1z" />
+                <path d="M456 465 c-9 -9 -16 -20 -16 -25 0 -14 31 -41 43 -37 21 7 32 36 21
+             54 -15 24 -29 26 -48 8z" />
+                <path d="M463 378 c2 -7 10 -13 17 -13 7 0 15 6 18 13 2 7 -5 12 -18 12 -13 0
+             -20 -5 -17 -12z" />
+                <path d="M396 268 c-3 -7 -9 -28 -15 -47 -6 -18 -8 -37 -5 -42 12 -20 34 -7
+             42 24 8 30 11 32 59 35 51 3 51 3 63 -33 11 -32 32 -46 43 -27 3 4 -2 28 -10
+             55 l-14 47 -80 0 c-55 0 -81 -4 -83 -12z" />
+                <path d="M458 223 c12 -2 30 -2 40 0 9 3 -1 5 -23 4 -22 0 -30 -2 -17 -4z" />
+                <path d="M293 183 c15 -2 37 -2 50 0 12 2 0 4 -28 4 -27 0 -38 -2 -22 -4z" />
+                <path d="M453 183 c15 -2 39 -2 55 0 15 2 2 4 -28 4 -30 0 -43 -2 -27 -4z" />
+                <path d="M608 183 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
+              </g>
+            </svg>
+
+          </div>
+          <h3 class="fs-4 fw-semibold">Personal Training</h3>
+          <p>Ιδιαίτερες συνεδρίες με προσωπικό γυμναστή για ειδική καθοδήγηση.</p>
+        </div>
+
+        <!-- 6 Σωματική Αξιολόγηση -->
+        <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column align-items-center">
+          <div class="icon-square bg-body-secondary d-flex align-items-center justify-content-center rounded-4 mb-3"
+            style="width:80px;height:80px;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48.000000pt" height="48.000000pt"
+              viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+
+              <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M271 621 c-11 -7 -13 -23 -8 -70 l7 -60 -103 -3 c-94 -3 -102 -4
+             -102 -23 0 -18 8 -20 67 -23 38 -2 71 -8 77 -16 6 -8 12 -90 13 -212 l3 -199
+             25 0 c24 0 25 3 28 73 2 51 -2 87 -14 118 -28 74 3 154 73 190 21 10 45 24 53
+             31 9 7 45 13 80 15 57 3 65 5 65 23 0 19 -8 20 -102 23 l-101 3 1 67 c2 65 1
+             67 -23 70 -14 1 -31 -2 -39 -7z" />
+                <path d="M120 545 c0 -14 5 -25 10 -25 6 0 10 7 10 15 0 8 6 15 14 15 8 0 18
+             5 21 10 4 6 -7 10 -24 10 -26 0 -31 -4 -31 -25z" />
+                <path d="M425 560 c3 -5 13 -10 21 -10 8 0 14 -7 14 -15 0 -8 5 -15 10 -15 6
+             0 10 11 10 25 0 21 -5 25 -31 25 -17 0 -28 -4 -24 -10z" />
+                <path d="M350 382 c-98 -49 -106 -186 -13 -243 27 -17 45 -20 86 -16 42 4 56
+             10 84 40 18 20 35 48 39 62 15 62 -22 136 -82 161 -44 18 -72 18 -114 -4z
+             m105 -28 c108 -51 60 -215 -58 -200 -106 13 -131 159 -34 201 41 18 52 18 92
+             -1z" />
+                <path d="M425 269 c-32 -36 -40 -40 -56 -31 -28 18 -34 14 -14 -8 26 -29 38
+             -25 80 26 48 58 40 68 -10 13z" />
+                <path d="M122 244 c2 -21 9 -30 26 -32 12 -2 22 1 22 7 0 6 -7 11 -15 11 -8 0
+             -15 6 -15 14 0 8 -5 18 -11 21 -7 5 -9 -3 -7 -21z" />
+                <path d="M490 114 c0 -27 54 -105 70 -102 22 5 18 22 -17 72 -34 47 -53 58
+             -53 30z" />
+                <path d="M322 68 c3 -49 5 -53 28 -53 22 0 25 5 28 40 3 29 -1 43 -14 52 -35
+             26 -45 16 -42 -39z" />
+              </g>
+            </svg>
+          </div>
+          <h3 class="fs-4 fw-semibold">Σωματική Αξιολόγηση</h3>
+          <p>Μετρήσεις σώματος, ανάλυση λιπώδους μάζας, ποσοστό μυϊκής μάζας.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--Προγράμματα-->
+
+  <div id="carouselExample" class="carousel slide carousel-fade">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item c-item active">
+        <img src="images\pexels-anush-1229356.jpg" class="d-block w-100 c-img" alt="Bodybuilding">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
+          <h5 class="carousel-title">Bodybuilding</h5>
+          <p class="mt-4 fs-3">Δούλεψε στοχευμένα κάθε μυϊκή ομάδα και διαμόρφωσε το σώμα σου με ακρίβεια.</p>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="images\pexels-olly-3757957.jpg" class="d-block w-100 c-img" alt="Cardio">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
+          <h5 class="carousel-title">Cardio</h5>
+          <p class="mt-4 fs-3">Βελτίωσε την αντοχή σου, κάψε θερμίδες και ενίσχυσε το καρδιοαναπνευστικό σου σύστημα.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="images\tabata.png" class="d-block w-100 c-img" alt="Tabata">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
+          <h5 class="carousel-title">Tabata</h5>
+          <p class="mt-4 fs-3">Έντονη διαλειμματική προπόνηση 4 λεπτών που απογειώνει τον μεταβολισμό.</p>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="images\low-angle-view-unrecognizable-muscular-build-man-preparing-lifting-barbell-health-club.jpg"
+          class="d-block w-100 c-img" alt="Weightlifting">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
+          <h5 class="carousel-title"> Weightlifting</h5>
+          <p class="mt-4 fs-3">Χτίσε δύναμη και μυϊκή μάζα με ασκήσεις προσαρμοσμένες σε όλα τα επίπεδα</p>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="images\pexels-leonardho-1552242.jpg" class="d-block w-100 c-img" alt="Cross training">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
+          <h5 class="carousel-title">Cross Training</h5>
+          <p class="mt-4 fs-3">Συνδύασε δύναμη, αντοχή και εκρηκτικότητα σε μια ολοκληρωμένη εμπειρία fitness.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Προπονητές -->
+
+  <section id="coaches">
+    <div class="custom-divider mt-4 mb-5">
+      <h4 class="coach-h4">Οι Προπονητές</h4>
+    </div>
+    <div class="container col-xxl-8 px-4 mt-4 coach-p">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="images\coach1.jpg" class="coach-img" alt="giorgos kasteliotis" width="300" height="200"
+            loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h6 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 h6-g">Γιώργος Καστελιώτης</h6>
+          <p class="lead h6-g">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+            most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container col-xxl-8 px-4 coach-p custom-margin coach-m">
+      <div class="row align-items-center g-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="images\coach2.jpeg" class="coach-img" alt="panos pissas" width="300" height="200" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h6 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 h6-p">Πάνος Πίσσας</h6>
+          <p class="lead h6-p">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+            most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Testimonial-->
+
+  <div id="testimonialCarousel" class="testimonial-section text-center carousel slide carousel123">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="testimonial-overlay"></div>
+    <div class="container testimonial-content">
+      <h2>Τι λένε οι πελάτες μας</h2>
+      <div>
+        <img src="images\star1.png" alt="star rating" class="star-img">
+      </div>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner inner2">
+          <div class="carousel-item active">
+            <blockquote>“Είναι πολύ καλοί και ευγενικοί με πολλες γνώσεις στο αντικείμενο τους.
+              Ο χώρος είναι καθαρός και τα μηχανήματα άριστα συντηρημένα.
+              Επίσης το πιο σημαντικό είναι ότι γυμνάζεσαι σωστά και είναι πάντα δίπλα σου για να σου δείχνουν την
+              άσκηση.”</blockquote>
+            <footer>Γιωργος Παπαμωρος</footer>
+          </div>
+
+          <div class="carousel-item">
+            <blockquote>“Ωραίος χώρος καί τά παιδιά εκεί πού δουλεύουν είναι πολύ καλοί”</blockquote>
+            <footer>mitsos Xenos</footer>
+          </div>
+
+          <div class="carousel-item">
+            <blockquote>“Μπράβο σε όλα τα παιδιά για τον επαγγελματισμό τους και την αντιμετώπιση προς τους
+              αθλούμενους.Τους συστήνω ανεπιφύλακτα!!”</blockquote>
+            <footer>Nontas Bitis</footer>
+          </div>
+
+          <div class="carousel-item">
+            <blockquote>“Τελειοοο!!!!”</blockquote>
+            <footer>Tasos Andriopoulos</footer>
+          </div>
+
+        </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev but1" type="button" data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon but1" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next but2" type="button" data-bs-target="#testimonialCarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon but2" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--Book Now-->
+  <section class="cta-section text-center py-5">
+    <div class="container">
+      <h2 class="cta-title mb-3">Έτοιμος για την αλλαγή;</h2>
+      <a href="contact.html" class="btn btn-lg cta-button">Κλείσε Ραντεβού</a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <div class="container-fluid footer-cl">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+      <div class="col mb-3 foot-logo">
+        <img src="images\logo.jpg" height="80vh" alt="Powerhall logo" class="foot-img">
+      </div>
+      <div class="col mb-3">
+      </div>
+      <div class="col mb-3">
+        <h2 class="text-start h2-foot">Στοιχεία Επικοινωνίας</h2>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411" />
+              </svg>&nbsp;Ιωάννου χρισοστόμου 95, Πετρούπολη</span></li>
+          <li class="nav-item mb-2"><span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+              </svg><a href="tel:2105061752"
+                class="text-decoration-none link-body-emphasis link">&nbsp;2105061752</span></li></a>
+          <li class="nav-item mb-2"><span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+              </svg><a href="mailto:info@powerhall.gr"
+                class="text-decoration-none link-body-emphasis link">&nbsp;info@powerhall.gr</span></li></a>
+          <li class="nav-item mb-2"><a href="https://www.instagram.com/powerhall_/"
+              class="link-body-emphasis link text-decoration-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=592531761113729"
+              class="link-body-emphasis link-icon text-decoration-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col mb-3 h2-foot2">
+        <h2 class="text-start h2-foot">Quicklinks</h2>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 foot-link">ΑΡΧΙΚΗ</a></li>
+          <li class="nav-item mb-2"><a href="training.html" class="nav-link p-0 foot-link">ΠΡΟΠΟΝΗΣΕΙΣ</a></li>
+          <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 foot-link">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a></li>
+          <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 foot-link">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+        </ul>
+      </div>
+
+    </footer>
+    <div class="d-flex flex-column flex-sm-row pt-4 border-top">
+      <p class="rights-res"><span style="color: white;">2025 PowerHall All rights reserved. Powered by</span></p>
+    </div>
+  </div>
+  <a href="#" class="scroll-to-top" title="Πίσω στην κορυφή">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Σύνδεση με Bootstrap JS και Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
