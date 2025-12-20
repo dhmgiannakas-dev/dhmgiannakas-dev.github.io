@@ -28,3 +28,6 @@ No server required. Simply open `index.html` in your browser:
 # Open the project in your browser
 open index.html  # Mac
 start index.html # Windows
+
+## Live Demo
+https://dhmgiannakas-dev.github.io/Powerhall-website/
